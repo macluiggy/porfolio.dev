@@ -4,12 +4,13 @@ import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
+import NodeJS from "./icons/NodeJS.astro";
 
 const TAGS = {
   NEXT: {
     name: "Next.js",
     class: "bg-black text-white",
-    icon: NextJS,
+    icon: NodeJS,
   },
   TAILWIND: {
     name: "Tailwind CSS",
@@ -18,30 +19,13 @@ const TAGS = {
   },
 };
 const PROJECTS = [
-  /**
-   * PROJECTS
-Full Stack Social Media App : https://social-media-8yq.pages.dev/home
-User Account Management: Implemented features for user registration, login, and profile management.
-Post Creation: Enabled users to create, edit, and delete posts.
-User Interaction: Developed functionality for following/unfollowing other users and viewing their profiles.
-Authentication: Utilized JWT (JSON Web Token) for secure user authentication.
-
-   */
   {
     title: "Full Stack Social Media App",
     description:
       "User Account Management: Implemented features for user registration, login, and profile management. Post Creation: Enabled users to create, edit, and delete posts. User Interaction: Developed functionality for following/unfollowing other users and viewing their profiles. Authentication: Utilized JWT (JSON Web Token) for secure user authentication.",
     link: "https://social-media-8yq.pages.dev/home",
+    github: "https://github.com/macluiggy/social-media",
     image: "/projects/social-media.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-  {
-    title: "SVGL - A beautiful library with SVG logos",
-    description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
 ];
@@ -68,7 +52,7 @@ Authentication: Utilized JWT (JSON Web Token) for secure user authentication.
           </h3>
           <div class="flex flex-wrap mt-2">
             <ul class="flex flex-row mb-2 gap-x-2">
-              {tags.map((tag) => (
+              {/* {tags.map((tag) => (
                 <li>
                   <span
                     class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
@@ -77,7 +61,7 @@ Authentication: Utilized JWT (JSON Web Token) for secure user authentication.
                     {tag.name}
                   </span>
                 </li>
-              ))}
+              ))} */}
             </ul>
 
             <div class="mt-2 text-gray-700 dark:text-gray-400">
